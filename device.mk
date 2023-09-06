@@ -82,7 +82,7 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_NO_CAMERA := true
 
-TARGET_SHIPS_GCAM_GO ?= false
+TARGET_SHIPS_GCAM_GO ?= true
 ifeq ($(TARGET_SHIPS_GCAM_GO),true)
 PRODUCT_PACKAGES += \
     GCamGOPrebuilt-V2
