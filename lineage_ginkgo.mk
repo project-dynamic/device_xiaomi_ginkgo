@@ -26,6 +26,18 @@ $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 # Inherit some common LineageOS stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# RisingOS Flags
+RISING_CHIPSET := SD665
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+RISING_MAINTAINER := AtharvaSwamy
+TARGET_ENABLE_BLUR := true
+TARGET_BUILD_APERTURE_CAMERA := false
+
 # Device identifier
 PRODUCT_NAME := lineage_ginkgo
 PRODUCT_DEVICE := ginkgo
