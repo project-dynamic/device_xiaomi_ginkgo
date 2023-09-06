@@ -80,6 +80,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
 
 # Camera
+PRODUCT_NO_CAMERA := true
+
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
