@@ -82,6 +82,12 @@ PRODUCT_COPY_FILES += \
 # Camera
 PRODUCT_NO_CAMERA := true
 
+TARGET_SHIPS_GCAM_GO ?= false
+ifeq ($(TARGET_SHIPS_GCAM_GO),true)
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt-V2
+endif
+
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0.vendor \
     android.hardware.camera.provider@2.4-impl \
